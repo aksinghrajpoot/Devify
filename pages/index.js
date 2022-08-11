@@ -12,9 +12,7 @@ export default function Home() {
               </h1>
               <ul className=" ml-3 space-y-1 list-inside list-disc">
                 <Link href="/hosting">
-                  <a href="/hosting">
-                    <li>Hosting</li>
-                  </a>
+                  <li className="text-emerald-400">Hosting</li>
                 </Link>
                 <li>Illustrations</li>
                 <li>Jobs</li>

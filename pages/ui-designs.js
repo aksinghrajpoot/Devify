@@ -1,18 +1,17 @@
-import hostingData from "../data/hosting-data";
+import uiDesignData from "../data/uidesign-data";
 import Head from "next/head";
-
-export default function Hosting() {
+export default function Uidesigns() {
   return (
     <>
       <Head>
-        <title>Best Free Hosting Resources</title>
+        <title>Ui Designs for inspiration</title>
       </Head>
       <div className="container py-8">
         <h1 className="text-center text-slate-200 text-lg mb-6">
-          📛 Hosting Resources 📛
+          📛 Resource for Ui Design Inspiration 📛
         </h1>
         <div className="grid md:grid-cols-3 gap-6">
-          {hostingData
+          {uiDesignData
             // .sort((a, b) => a.title.localeCompare(b.title))
             .map((item) => (
               <div
@@ -23,8 +22,6 @@ export default function Hosting() {
                   {item.title}
                 </h3>
                 <p>
-                  <strong>Type: </strong>
-                  {item.type} <br />
                   <strong>Desc: </strong>
                   {item.desc}
                 </p>
